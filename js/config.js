@@ -24,7 +24,7 @@ const SITE_CONFIG = {
     highlightText: "SenseCEFR",
     description: "a Context-Aware Vocabulary Profiler with Word Sense Disambiguation",
     linkText: "Explore SenseCEFR",
-    linkUrl: "https://nlp4ed.github.io/SenseCEFR/"
+    linkUrl: "https://nlp4ed.com/SenseCEFR/"
   },
 
   // social and outbound urls
