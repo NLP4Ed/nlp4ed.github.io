@@ -1,1 +1,447 @@
-<h1>NLPEd Portal</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NLP4Ed - Empowering EFL Education Through AI and NLP</title>
+  <meta name="description" content="NLP4Ed is a community of tech enthusiasts, EFL teachers, and education researchers bringing AI and NLP advancements to English education in Morocco.">
+  <meta name="theme-color" content="#0f2238">
+
+  <!-- og tags -->
+  <meta property="og:title" content="NLP4Ed - Empowering EFL Education Through AI and NLP">
+  <meta property="og:description" content="Democratizing AI and Natural Language Processing tools for EFL teachers and researchers in Morocco.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./img/nlp4ed_logo.svg">
+
+  <link rel="icon" type="image/svg+xml" href="./img/nlp4ed_logo.svg">
+
+  <!-- google font: ibm plex mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <!-- a11y skip link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- top announcement bar -->
+  <div id="announcement-banner-container">
+    <aside class="announcement-bar" role="region" aria-label="Announcement">
+      <div class="container announcement-inner">
+        <a href="https://youtu.be/QWANnIgvU74" target="_blank" rel="noopener noreferrer" class="announcement-link">
+          <span class="announcement-badge">New Video</span>
+          <span>watch our new n8n x corpus linguistics tutorial!</span>
+          <svg class="icon announcement-arrow" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+        </a>
+      </div>
+    </aside>
+  </div>
+
+  <!-- navbar -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo-link" aria-label="NLP4Ed Home">
+        <img src="./img/nlp4ed_logo.svg" alt="NLP4Ed Logo" class="brand-logo-img">
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#resources" class="nav-link">Resources</a></li>
+          <li><a href="#webinars" class="nav-link">Webinars</a></li>
+          <li><a href="#team" class="nav-link">Team</a></li>
+          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScu2uESxDQe7Fn1Zjr99BI6D62kpIkKspIYXyHVkbW103mKhg/viewform" target="_blank" rel="noopener noreferrer" class="nav-link">Join us!</a></li>
+          <li><a href="https://calendly.com/yassine_l/nlp4ed" target="_blank" rel="noopener noreferrer" class="nav-link">Appointment</a></li>
+          <li><a href="mailto:nlp4ed@gmail.com" class="nav-link">Contact us</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="social-links" aria-label="Social Profiles">
+          <a href="https://www.linkedin.com/company/nlp4ed/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn">
+            <svg class="icon icon-filled" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="https://github.com/NLP4Ed" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub">
+            <svg class="icon icon-filled" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@NLP4Ed" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="YouTube">
+            <svg class="icon icon-filled" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+          </a>
+          <a href="https://x.com/NLP4Ed" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="X (Twitter)">
+            <svg class="icon icon-filled" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+
+        <button type="button" class="mobile-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
+          <svg class="icon" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- main page -->
+  <main id="main-content">
+    <!-- hero section -->
+    <section id="home" class="hero-section">
+      <div class="container hero-content">
+        <a href="https://nlp4ed.github.io/SenseCEFR/" target="_blank" rel="noopener noreferrer" class="hero-alert">
+          <span class="hero-alert-corner corner-tl" aria-hidden="true"></span>
+          <span class="hero-alert-corner corner-tr" aria-hidden="true"></span>
+          <span class="hero-alert-corner corner-bl" aria-hidden="true"></span>
+          <span class="hero-alert-corner corner-br" aria-hidden="true"></span>
+          <div class="hero-alert-title">
+            <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+            New tool alert!
+          </div>
+          <p class="hero-alert-desc">
+            <span class="hero-alert-link">SenseCEFR</span>, a Context-Aware Vocabulary Profiler with Word Sense Disambiguation
+          </p>
+        </a>
+
+        <h1 class="hero-title">
+          NLP4Ed
+        </h1>
+        <p class="hero-subtitle">
+          Empowering EFL Education Through AI and NLP
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="https://nlp4ed.notion.site/" target="_blank" rel="noopener noreferrer" class="btn btn-primary hero-btn">
+            <svg class="icon btn-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            <span class="btn-text">Explore our curated list of resources</span>
+            <svg class="icon btn-icon" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- the heart of nlp4ed -->
+    <section class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">The Heart of NLP4Ed</h2>
+        </header>
+
+        <div class="grid-three">
+          <article class="heart-card">
+            <h3 class="heart-card-title">
+              <span class="accent-word">Who</span> We Are
+            </h3>
+            <p class="heart-card-text">
+              NLP4Ed is a small yet passionate team of tech enthusiasts, composed of EFL teachers and education researchers. Our mission is to bring the benefits of AI and natural language processing (NLP) advancements to English as a Foreign Language (EFL) education in Morocco. We believe in democratizing technology to enhance learning and teaching experiences for all.
+            </p>
+          </article>
+
+          <article class="heart-card">
+            <h3 class="heart-card-title">
+              <span class="accent-word">Our</span> Philosophy
+            </h3>
+            <p class="heart-card-text">
+              We cater to both non-technical users and specialists. Whether you’re a teacher with no coding experience or a tech-savvy user, our community offers support tailored to different needs. Our goal is to make AI and NLP tools accessible to educators and to ensure that these technologies become mainstream in the Moroccan education sector.
+            </p>
+          </article>
+
+          <article class="heart-card">
+            <h3 class="heart-card-title">
+              <span class="accent-word">Our</span> Motivation
+            </h3>
+            <p class="heart-card-text">
+              This community is for data lovers who believe in the power of quantitative analysis. Our aim is to provide support and foster an understanding of how data can drive impactful research in education. Together, we can make a difference in how education evolves in Morocco by harnessing the potential of AI and NLP technologies.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- mission pillars -->
+    <section class="section section-alt">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">
+            <span class="accent-word">What</span> We Aim to Achieve
+          </h2>
+          <p class="section-subtitle">
+            Our mission is to revolutionize English language education in Morocco by leveraging AI and NLP technologies.
+          </p>
+        </header>
+
+        <div class="aim-list">
+          <div class="aim-item">
+            <div class="aim-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 9.9-1"></path>
+              </svg>
+            </div>
+            <div class="aim-content">
+              <h3 class="aim-title">Develop Open-Source Tools for Education</h3>
+              <p class="aim-desc">
+                Create and share open-source tools and scripts tailored to enhancing English language education through AI and NLP technologies.
+              </p>
+            </div>
+          </div>
+
+          <div class="aim-item">
+            <div class="aim-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <div class="aim-content">
+              <h3 class="aim-title">Build a Collaborative Community</h3>
+              <p class="aim-desc">
+                Establish a supportive network for discussing and sharing ideas, tools, and knowledge about data-driven teaching and research in education.
+              </p>
+            </div>
+          </div>
+
+          <div class="aim-item">
+            <div class="aim-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="16 12 12 8 8 12"></polyline>
+                <line x1="12" y1="16" x2="12" y2="8"></line>
+              </svg>
+            </div>
+            <div class="aim-content">
+              <h3 class="aim-title">Promote Awareness and Integration of AI in Education</h3>
+              <p class="aim-desc">
+                Advocate for the adoption of AI and NLP in education, showcasing its potential to transform teaching and learning practices in Morocco.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- stats counters -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-layout">
+          <div>
+            <h2 class="stats-intro-title">
+              <span class="accent-word">What</span> We Achieved So Far
+            </h2>
+            <p class="stats-intro-desc">
+              Analyzing the numbers behind our success: an in-depth look at the key metrics driving our achievements.
+            </p>
+          </div>
+
+          <div class="stats-grid">
+            <a href="https://nlp4ed.notion.site/" target="_blank" rel="noopener noreferrer" class="stat-box">
+              <div class="stat-number">+2</div>
+              <div class="stat-label">Open-source tools</div>
+            </a>
+            <a href="https://nlp4ed.notion.site/" target="_blank" rel="noopener noreferrer" class="stat-box">
+              <div class="stat-number">+3</div>
+              <div class="stat-label">Datasets</div>
+            </a>
+            <a href="https://nlp4ed.notion.site/" target="_blank" rel="noopener noreferrer" class="stat-box">
+              <div class="stat-number">+90</div>
+              <div class="stat-label">Resources</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- resources section -->
+    <section id="resources" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">
+            <span class="accent-word">Resources</span>
+          </h2>
+          <p class="section-subtitle">
+            A selection of our open-source tools, video tutorials, and educational NLP resources.
+          </p>
+        </header>
+
+        <div class="resources-grid">
+          <!-- sensecefr tool card -->
+          <article class="resource-card">
+            <div class="resource-card-header">
+              <span class="resource-badge resource-badge-featured">Featured Tool</span>
+              <h3 class="resource-title">SenseCEFR</h3>
+              <p class="resource-tagline">Context-Aware Vocabulary Profiler with Word Sense Disambiguation</p>
+            </div>
+            <p class="resource-desc">
+              An advanced open-source NLP profiler that assesses vocabulary level against the CEFR framework by disambiguating word senses directly in context rather than relying on isolated lemmas.
+            </p>
+            <div class="resource-doi">
+              DOI <a href="https://doi.org/10.5281/zenodo.23319803" target="_blank" rel="noopener noreferrer">10.5281/zenodo.23319803</a>
+            </div>
+            <div class="resource-actions">
+              <a href="https://nlp4ed.github.io/SenseCEFR/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-solid-neutral">
+                Open
+                <svg class="icon" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- youtube channel card -->
+          <article class="resource-card">
+            <div class="resource-card-header">
+              <span class="resource-badge">Tutorials</span>
+              <h3 class="resource-title">YouTube Channel</h3>
+              <p class="resource-tagline">Video Tutorials & Workflow Walkthroughs</p>
+            </div>
+            <p class="resource-desc">
+              Watch our video tutorials covering n8n automation, corpus linguistics pipelines, text analytics, and practical NLP workflows designed for language teachers and researchers.
+            </p>
+            <div class="resource-actions">
+              <a href="https://www.youtube.com/@NLP4Ed" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-solid-neutral">
+                Watch on YouTube
+                <svg class="icon" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- curated notion hub card -->
+          <article class="resource-card">
+            <div class="resource-card-header">
+              <span class="resource-badge">Curated Hub</span>
+              <h3 class="resource-title">More resources</h3>
+              <p class="resource-tagline">Full Resource Database & Archive</p>
+            </div>
+            <p class="resource-desc">
+              An all-in-one hub bringing together 90+ curated tools, software, text editors, visualization platforms, research datasets, and practical guides in one place.
+            </p>
+            <div class="resource-actions">
+              <a href="https://nlp4ed.notion.site/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-solid-neutral">
+                Open
+                <svg class="icon" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- luma events embed -->
+    <section id="webinars" class="section section-alt">
+      <div class="container">
+        <header class="section-header text-center">
+          <h2 class="section-title">
+            <span class="accent-word">Upcoming</span> Webinars
+          </h2>
+          <p class="section-subtitle">
+            Explore our scheduled webinars, hands-on workshops, and collaborative meetups on applying AI and NLP in EFL education.
+          </p>
+        </header>
+
+        <div class="webinar-wrapper">
+          <div class="webinar-iframe-container">
+            <iframe 
+              src="https://luma.com/embed/calendar/cal-JiwVdjbpsJkcjCV/events?lt=light" 
+              width="1000" 
+              height="450" 
+              frameborder="0" 
+              style="border: 1px solid #bfcbda88; border-radius: 4px;" 
+              allowfullscreen="" 
+              aria-hidden="false" 
+              tabindex="0"
+              title="NLP4Ed Upcoming Webinars Calendar">
+            </iframe>
+          </div>
+          <div class="webinar-footer-note">
+            <a href="https://luma.com/user/nlp4ed" target="_blank" rel="noopener noreferrer" class="webinar-profile-link">
+              <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              <span>Visit our Luma profile</span>
+              <svg class="icon icon-sm" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- team section -->
+    <section id="team" class="section">
+      <div class="container">
+        <header class="section-header text-center">
+          <h2 class="section-title">
+            <span class="accent-word">Meet</span> our team
+          </h2>
+          <p class="section-subtitle">
+            Dedicated individuals driving our success
+          </p>
+        </header>
+
+        <div class="team-grid">
+          <article class="team-card">
+            <div class="team-avatar-wrapper">
+              <img src="./img/team/yassine-lchgary.png" alt="Yassine Lchgary" class="team-avatar">
+            </div>
+            <div class="team-info">
+              <h3 class="team-name">Yassine Lchgary</h3>
+              <p class="team-role">Founder</p>
+              <p class="team-bio">
+                Doctoral Researcher at Hassan II University, specializing in multilingualism and corpus linguistics. Holder of a Master’s degree in Applied Linguistics for Language Teaching, with expertise in corpus linguistics and EFL material evaluation. Co-authored research analyzing news headlines using sentiment analysis and discourse-analytic frameworks.
+              </p>
+              <a href="https://www.linkedin.com/in/yassine-lchgary/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-neutral btn-sm">
+                <svg class="icon icon-filled" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                LinkedIn
+              </a>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <div class="team-avatar-wrapper">
+              <img src="./img/team/placeholder-avatar.png" alt="Maybe You? Avatar" class="team-avatar">
+            </div>
+            <div class="team-info">
+              <h3 class="team-name">Maybe You?</h3>
+              <p class="team-role">Your Role</p>
+              <p class="team-bio">
+                Join a team shaping the future with passion, innovation, and purpose. Be part of something extraordinary, leave your mark. Opportunities are limitless; the impact is real. Let’s build greatness together.
+              </p>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScu2uESxDQe7Fn1Zjr99BI6D62kpIkKspIYXyHVkbW103mKhg/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-solid-neutral btn-sm">
+                Join us!
+                <svg class="icon" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-layout">
+        <div class="footer-logo-col">
+          <a href="#home" class="footer-logo-link" aria-label="NLP4Ed Home">
+            <img src="./img/nlp4ed_logo.svg" alt="NLP4Ed Logo" class="footer-logo-img">
+          </a>
+        </div>
+
+        <div class="footer-main-col">
+          <p class="footer-tagline">
+            Democratizing natural language processing and AI advancements for English language education and applied linguistics research.
+          </p>
+
+          <div class="country-badge">
+            <svg class="icon" style="width: 14px; height: 14px;" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <span>Made in Morocco</span>
+          </div>
+
+          <div class="footer-divider"></div>
+
+          <div class="footer-copyright">
+            Copyright &copy; NLP4Ed. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/config.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
