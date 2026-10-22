@@ -29,8 +29,8 @@ const SITE_CONFIG = {
 
   // social and outbound urls
   links: {
-    resources: "https://nlp4ed.notion.site/",
-    joinUs: "https://docs.google.com/forms/d/e/1FAIpQLScu2uESxDQe7Fn1Zjr99BI6D62kpIkKspIYXyHVkbW103mKhg/viewform",
+    resources: "./resources/",
+    joinUs: "https://forms.gle/PF9S8bcZaAtJB3YA8",
     appointment: "https://calendly.com/yassine_l/nlp4ed",
     contactEmail: "mailto:nlp4ed@gmail.com",
     social: {

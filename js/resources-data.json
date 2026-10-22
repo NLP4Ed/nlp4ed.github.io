@@ -1,0 +1,987 @@
+[
+  {
+    "id": 1,
+    "title": "MWN Scraper",
+    "description": "This tool scrapes headlines from the Morocco World News website and allows you to download the results as a CSV file.",
+    "tags": [
+      "Scrapers",
+      "by NLP4Ed"
+    ],
+    "url": "https://colab.research.google.com/drive/1baFGmQY9lh4J7HuUk9fhHERHAps9XNI8",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 2,
+    "title": "Moroccan Learner Corpus (MoLEC)",
+    "description": "MoLEC is a collection of argumentative essays written by Moroccan undergraduate EFL students from different universities in Morocco.",
+    "tags": [
+      "Datasets"
+    ],
+    "url": "https://sites.google.com/view/molecorpus/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 3,
+    "title": "Hespress EN Scraper",
+    "description": "This tool scrapes headlines from the Hespress EN website and allows you to download the results as a CSV file.",
+    "tags": [
+      "Scrapers",
+      "by NLP4Ed"
+    ],
+    "url": "https://colab.research.google.com/drive/1agxhOuVCiNAuKTAXoPqNAy60x24BSv_2",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 4,
+    "title": "Laurence Anthony's Website",
+    "description": "",
+    "tags": [
+      "Software"
+    ],
+    "url": "https://www.laurenceanthony.net/software/antconc/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 5,
+    "title": "Sketch Engine",
+    "description": "Sketch Engine is the ultimate corpus tool to create and search text corpora in 95+ languages. Try 30-day free trial.",
+    "tags": [
+      "Tools"
+    ],
+    "url": "https://www.sketchengine.eu/",
+    "beginnerFriendly": true
+  },
+  {
+    "id": 6,
+    "title": "LancsBox Corpus Toolbox",
+    "description": "#LancsBox is a new-generation software package for the analysis of language data and corpora developed at Lancaster University.",
+    "tags": [
+      "Software"
+    ],
+    "url": "http://corpora.lancs.ac.uk/lancsbox/index.php",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 7,
+    "title": "Computer Assisted Text Markup and Analysis",
+    "description": "In CATMA you can work the way, which best fits your research question: qualitative or quantitative, bottom-up and exploratory, or descriptive and taxonomy-guided, individually or in a team—you choose.",
+    "tags": [
+      "Software"
+    ],
+    "url": "https://catma.de/",
+    "beginnerFriendly": true
+  },
+  {
+    "id": 8,
+    "title": "n8n Workflows",
+    "description": "This workflow helps automate corpus tagging for grammatical errors.",
+    "tags": [
+      "by NLP4Ed",
+      "n8n Workflows"
+    ],
+    "url": "https://drive.google.com/drive/folders/1oDOg0SZHUngTUDTOHTT7kuvRccL46YjR",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 9,
+    "title": "Duplicate Word Finder",
+    "description": "Find duplicate words and eliminate them from your texts.",
+    "tags": [
+      "Text",
+      "Tools"
+    ],
+    "url": "https://duplicateword.com/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 10,
+    "title": "WordSmith Tools",
+    "description": "Windows software for finding word patterns.",
+    "tags": [
+      "Tools"
+    ],
+    "url": "https://www.lexically.net/wordsmith/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 11,
+    "title": "Vocabulary Profiler",
+    "description": "Use this tool to profile vocabulary.",
+    "tags": [
+      "Tools",
+      "Vocab Profiler"
+    ],
+    "url": "https://www.eapfoundation.com/vocab/profiler/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 12,
+    "title": "Free CLAWS Web Tagger",
+    "description": "This free web tagging service offers access to the latest version of the tagger, CLAWS4, which was used to POS tag c.100 million words of the original British National Corpus (BNC1994), the BNC2014, and all the English corpora in Mark Davies' BYU corpus server. You can choose to have output in either the smaller C5 tagset or the larger C7 tagset.",
+    "tags": [
+      "Tools"
+    ],
+    "url": "https://ucrel-api.lancaster.ac.uk/claws/free.html",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 13,
+    "title": "English-Corpora.org",
+    "description": "Compare genres,  dialects, time periods. Search by PoS, collocates, synonyms, and much more.",
+    "tags": [
+      "Datasets"
+    ],
+    "url": "https://www.english-corpora.org/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 14,
+    "title": "Text Inspector",
+    "description": "Text Inspector Helps You Analyse and adapt your text Get an overall difficulty score for your English content based on over 200 metrics",
+    "tags": [
+      "Tools",
+      "Vocab Profiler"
+    ],
+    "url": "https://textinspector.com/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 15,
+    "title": "Multidimensional Analysis Tagger (MAT)",
+    "description": "MAT is a program that replicates Biber's (1988) Variation across Speech and Writing tagger for the multidimensional functional analysis of English texts, generally applied for studies on text type or genre variation. The program can generate a grammatically annotated version of the corpus selected as well as the statistics needed to perform a text-type or genre analysis.",
+    "tags": [
+      "Software"
+    ],
+    "url": "https://sites.google.com/site/multidimensionaltagger/about",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 16,
+    "title": "Voyant Tools",
+    "description": "Voyant Tools is a web-based reading and analysis environment for digital texts.",
+    "tags": [
+      "Tools"
+    ],
+    "url": "https://voyant-tools.org/",
+    "beginnerFriendly": true
+  },
+  {
+    "id": 17,
+    "title": "Compleat Lexical Tutor",
+    "description": "The Compleat Lexical Tutor (also known as Lextutor) is a free, extensive collection of online tools for language learning, teaching, and linguistic research.",
+    "tags": [
+      "Tools"
+    ],
+    "url": "https://www.lextutor.ca/",
+    "beginnerFriendly": true
+  },
+  {
+    "id": 18,
+    "title": "Lextutor VocabProfilers",
+    "description": "Plan, study, monitor, explore L1 and L2 vocab development pre-school to university",
+    "tags": [
+      "Tools",
+      "Vocab Profiler"
+    ],
+    "url": "https://www.lextutor.ca/vp/",
+    "beginnerFriendly": true
+  },
+  {
+    "id": 19,
+    "title": "VocabKitchen",
+    "description": "CEFR Profiler.",
+    "tags": [
+      "Tools",
+      "Vocab Profiler"
+    ],
+    "url": "https://www.vocabkitchen.com/",
+    "beginnerFriendly": true
+  },
+  {
+    "id": 20,
+    "title": "WordSift.org",
+    "description": "Toolsuite for visualizing and exploring passages of text",
+    "tags": [
+      "Tools",
+      "Visualization"
+    ],
+    "url": "https://wordsift.org/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 21,
+    "title": "Contractions Expansion in Python",
+    "description": "Contractions play a significant role in informal writing and speech, in the field of Natural Language Processing (NLP), it is often necessary to expand contractions to improve text understanding and processing.",
+    "tags": [
+      "Guides"
+    ],
+    "url": "https://www.tutorialspoint.com/how-to-expand-contractions-in-text-processing-in-nlp",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 22,
+    "title": "The Stanford NLP Group",
+    "description": "A Part-Of-Speech Tagger (POS Tagger) is a piece of software that reads text in some language and assigns parts of speech to each word (and other token), such as noun, verb, adjective, etc., although generally computational applications use more fine-grained POS tags like 'noun-plural'.",
+    "tags": [
+      "Software"
+    ],
+    "url": "https://nlp.stanford.edu/software/tagger.shtml",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 23,
+    "title": "NLP+CSS 201 Tutorials",
+    "description": "Tutorials for advanced natural language processing methods designed for computational social science research.",
+    "tags": [
+      "Guides"
+    ],
+    "url": "https://nlp-css-201-tutorials.github.io/nlp-css-201-tutorials/",
+    "beginnerFriendly": true
+  },
+  {
+    "id": 24,
+    "title": "Text Mining with R",
+    "description": "A guide to text analysis within the tidy data framework, using the tidytext package and other tidy tools.",
+    "tags": [
+      "Books/Papers",
+      "R"
+    ],
+    "url": "https://www.tidytextmining.com/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 25,
+    "title": "CoreNLP",
+    "description": "High-performance human language analysis tools, now with native deep learning modules in Python, available in many human languages.",
+    "tags": [
+      "Books/Papers"
+    ],
+    "url": "https://stanfordnlp.github.io/CoreNLP/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 26,
+    "title": "AntWordProfiler",
+    "description": "A freeware tool for profiling the vocabulary level and complexity of texts.",
+    "tags": [
+      "Software",
+      "Vocab Profiler"
+    ],
+    "url": "https://www.laurenceanthony.net/software/antwordprofiler/",
+    "beginnerFriendly": true
+  },
+  {
+    "id": 27,
+    "title": "NLP For The Social Sciences",
+    "description": "ARTE is a tool that will automatically calculate a variety of readability formulas for texts. The readability formulas include classic formulas like Flesch-Kincaid Grade Level and new formulas...",
+    "tags": [
+      "Software"
+    ],
+    "url": "https://www.linguisticanalysistools.org/tools.html",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 28,
+    "title": "DocuScope",
+    "description": "Making the invisible visible through natural language processing and interactive visualization.",
+    "tags": [
+      "Software",
+      "Visualization"
+    ],
+    "url": "https://www.cmu.edu/dietrich/english/research-and-publications/docuscope.html",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 29,
+    "title": "Learn Python with Jupyter",
+    "description": "This book helps develop computational thinking while learning to code in Python, using the Jupyter environment.",
+    "tags": [
+      "Books/Papers",
+      "Python"
+    ],
+    "url": "https://www.learnpythonwithjupyter.com/assets/book/learn_python_with_jupyter.pdf",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 30,
+    "title": "NLTK Book",
+    "description": "This book provides a highly accessible introduction to the field of NLP. It can be used for individual study or as the textbook for a course on natural language processing or computational linguistics, or as a supplement to courses in artificial intelligence, text mining, or corpus linguistics. The book is intensely practical, containing hundreds of fully-worked examples and graded exercises.",
+    "tags": [
+      "Books/Papers",
+      "Python"
+    ],
+    "url": "https://www.nltk.org/book/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 31,
+    "title": "Tokenization in NLP",
+    "description": "Discover the importance of tokenization in NLP, explore various tools, and learn about challenges and limitations.",
+    "tags": [
+      "Guides"
+    ],
+    "url": "https://neptune.ai/blog/tokenization-in-nlp",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 32,
+    "title": "Programming for Corpus Linguistics",
+    "description": "This chapter discusses the important role of programming in corpus linguistics.",
+    "tags": [
+      "Books/Papers"
+    ],
+    "url": "https://link.springer.com/chapter/10.1007/978-3-030-46216-1_9",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 33,
+    "title": "Introduction to NLTK",
+    "description": "Natural Language Processing (NLP) plays an important role in enabling machines to understand and generate human language.",
+    "tags": [
+      "Guides"
+    ],
+    "url": "https://www.geeksforgeeks.org/introduction-to-nltk-tokenization-stemming-lemmatization-pos-tagging/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 34,
+    "title": "Corpus Linguistics and Statistics with R",
+    "description": "This textbook explores quantitative corpus linguistics, offering hands-on, step-by-step instructions to implement the techniques in the field.",
+    "tags": [
+      "Books/Papers",
+      "R"
+    ],
+    "url": "https://link.springer.com/book/10.1007/978-3-319-64572-8",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 35,
+    "title": "Natural Language Processing (NLP) for Beginners",
+    "description": "Explore and run machine learning code with Kaggle Notebooks, using data from multiple data sources.",
+    "tags": [
+      "Jupyter Notebooks"
+    ],
+    "url": "https://www.kaggle.com/code/faressayah/natural-language-processing-nlp-for-beginners",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 36,
+    "title": "Natural Language Processing With Python's NLTK Package – Real Python",
+    "description": "In this beginner-friendly tutorial, you'll take your first steps with Natural Language Processing (NLP) and Python's Natural Language Toolkit (NLTK). You'll learn how to process unstructured data in order to be able to analyze it and draw conclusions from it.",
+    "tags": [
+      "Guides"
+    ],
+    "url": "https://realpython.com/nltk-nlp-python/",
+    "beginnerFriendly": true
+  },
+  {
+    "id": 37,
+    "title": "Sentiment Analysis with NLTK",
+    "description": "In this video you will go through a Natural Language Processing Python Project creating a Sentiment Analysis classifier with NLTK's VADER and Huggingface Roberta Transformers.",
+    "tags": [
+      "Guides"
+    ],
+    "url": "https://www.youtube.com/watch?v=QpzMWQvxXWk",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 38,
+    "title": "NLTK Tutorial in Python",
+    "description": "In this video, we'll be discussing about Natural Language ToolKit",
+    "tags": [
+      "Guides",
+      "Python Libraries"
+    ],
+    "url": "https://www.youtube.com/playlist?list=PLS1QulWo1RIZDws-_0Bfw5FZFmQJWtMl1",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 39,
+    "title": "Corpus Linguistics with Python",
+    "description": "Cambridge Core - Research Methods in Linguistics - Programming for Corpus Linguistics with Python and Dataframes",
+    "tags": [
+      "Books/Papers"
+    ],
+    "url": "https://www.cambridge.org/core/elements/abs/programming-for-corpus-linguistics-with-python-and-dataframes/5992A15EF6A4DBB70BBBCD122B2C603A",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 40,
+    "title": "AntConc 4.2 Tutorials",
+    "description": "A series of tutorials describing how to use AntConc (Version 4.2)",
+    "tags": [
+      "Guides"
+    ],
+    "url": "https://youtube.com/playlist?list=PLiRIDpYmiC0SjJeT2FuysOkLa45HG_tIu",
+    "beginnerFriendly": true
+  },
+  {
+    "id": 41,
+    "title": "pyLDAvis Topic Modeling",
+    "description": "Interactive topic model visualization. Port of the R package.",
+    "tags": [
+      "Python Libraries",
+      "Visualization"
+    ],
+    "url": "https://pypi.org/project/pyLDAvis/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 42,
+    "title": "Stanza – A Python NLP Package for Many Human Languages",
+    "description": "High-performance human language analysis tools, now with native deep learning modules in Python, available in many human languages.",
+    "tags": [
+      "Python Libraries"
+    ],
+    "url": "https://stanfordnlp.github.io/stanza/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 43,
+    "title": "COR: Corpus Linguistics",
+    "description": "This course is an introduction to the fast growing field of corpus linguistics. It aims to familiarise students with key concepts and common methods used in the construction of language corpora, as well as tools that have been developed for searching and using major corpora such as the British National Corpus, Czech National Corpus, and CJK corpora.",
+    "tags": [
+      "Courses"
+    ],
+    "url": "https://bond-lab.github.io/Corpus-Linguistics/",
+    "beginnerFriendly": true
+  },
+  {
+    "id": 44,
+    "title": "NLTK: Natural Language Toolkit",
+    "description": "NLTK is a leading platform for building Python programs to work with human language data. It provides easy-to-use interfaces to over 50 corpora and lexical resources such as WordNet, along with a suite of text processing libraries for classification, tokenization, stemming, tagging, parsing, and semantic reasoning, wrappers for industrial-strength NLP libraries, and an active discussion forum.",
+    "tags": [
+      "Python Libraries"
+    ],
+    "url": "https://www.nltk.org/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 45,
+    "title": "PyArabic Library",
+    "description": "A specific Arabic language library for Python, provides basic functions to manipulate Arabic letters and text, like detecting Arabic letters, Arabic letters groups and characteristics, remove diacritics etc.",
+    "tags": [
+      "Python Libraries"
+    ],
+    "url": "https://pypi.org/project/PyArabic/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 46,
+    "title": "LexicalRichness Module",
+    "description": "A module to compute textual lexical richness (aka lexical diversity). - GitHub - LSYS/LexicalRichness: :smile_cat: A module to compute textual lexical richness",
+    "tags": [
+      "Python Libraries"
+    ],
+    "url": "https://github.com/LSYS/lexicalrichness",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 47,
+    "title": "Text Cleaner and Text Formatter",
+    "description": "Text Cleaner and Text Formatter: Text cleaner is an all-in-one text cleaning and text formatting online tool that can perform many simple and complex text operations including format text, clean text, remove line breaks, strip HTML, convert case, and find and replace text online.",
+    "tags": [
+      "Text",
+      "Tools"
+    ],
+    "url": "https://textcleaner.net/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 48,
+    "title": "Linguistic Features in spaCy",
+    "description": "spaCy is a free open-source library for Natural Language Processing in Python. It features NER, POS tagging, dependency parsing, word vectors and more.",
+    "tags": [
+      "Python Libraries"
+    ],
+    "url": "https://spacy.io/usage/linguistic-features",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 49,
+    "title": "Corpus Linguistics for Beginners",
+    "description": "Corpus Linguistics for Beginners",
+    "tags": [
+      "Courses"
+    ],
+    "url": "https://youtube.com/playlist?list=PLwdHW2uSo6DV1-_5wQYQOplVnj8PPcoXU",
+    "beginnerFriendly": true
+  },
+  {
+    "id": 50,
+    "title": "Convokit",
+    "description": "This toolkit contains tools to extract conversational features and analyze social phenomena in conversations, using a single unified interface inspired by (and compatible with) scikit-learn.",
+    "tags": [
+      "Python Libraries"
+    ],
+    "url": "https://convokit.cornell.edu/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 51,
+    "title": "RegEx Cheat Sheet for Notepad++",
+    "description": "RegEx Cheat Sheet for Notepad++",
+    "tags": [
+      "Guides"
+    ],
+    "url": "https://www.linguisticsweb.org/doku.php?id=linguisticsweb:tutorials:basics:regex:regex-notepad",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 52,
+    "title": "Convert Case",
+    "description": "Easily convert text between different letter cases: lower case, UPPER CASE, Sentence case, Capitalized Case, aLtErNaTiNg cAsE and more online.",
+    "tags": [
+      "Text",
+      "Tools"
+    ],
+    "url": "https://convertcase.net/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 53,
+    "title": "BUTTER Text Analysis",
+    "description": "BUTTER stands for Basic Unit-Transposable Text Experimentation Resource. It is a free text analysis program that allows you to build your own pipelines without having to write a single line of code.",
+    "tags": [
+      "Software",
+      "Text"
+    ],
+    "url": "https://www.butter.tools/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 54,
+    "title": "OpenRefine",
+    "description": "OpenRefine is a powerful free, open source tool for working with messy data: cleaning it; transforming it from one format into another; and extending it with web services and external data.",
+    "tags": [
+      "Software",
+      "Text"
+    ],
+    "url": "https://openrefine.org/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 55,
+    "title": "ELAN Annotation Tool",
+    "description": "ELAN is an annotation tool for audio and video recordings.",
+    "tags": [
+      "Software"
+    ],
+    "url": "https://archive.mpi.nl/tla/elan",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 56,
+    "title": "Deepnote Data Science",
+    "description": "Explore data with Python & SQL, work together with your team, and share insights that lead to action — all in one place with Deepnote.",
+    "tags": [
+      "Jupyter Notebooks"
+    ],
+    "url": "https://deepnote.com/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 57,
+    "title": "Project Jupyter",
+    "description": "The Jupyter Notebook is a web-based interactive computing platform. The notebook combines live code, equations, narrative text, visualizations, interactive dashboards and other media.",
+    "tags": [
+      "Jupyter Notebooks"
+    ],
+    "url": "https://jupyter.org/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 58,
+    "title": "Google Colab",
+    "description": "Colab, or \"Colaboratory\", allows you to write and execute Python in your browser.",
+    "tags": [
+      "Jupyter Notebooks"
+    ],
+    "url": "https://colab.research.google.com/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 59,
+    "title": "Orange Data Mining",
+    "description": "Open source machine learning and data visualization.",
+    "tags": [
+      "Software",
+      "Text",
+      "Visualization"
+    ],
+    "url": "https://orangedatamining.com/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 60,
+    "title": "Corpus tools",
+    "description": "Corpus.Tools is a joint portal of Masaryk University's NLP Centre and Lexical Computing, dedicated to a range of software tools for text corpus processing, including the widely used corpus software Sketch Engine.",
+    "tags": [
+      "Collections"
+    ],
+    "url": "https://corpus.tools/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 61,
+    "title": "Stanford Corpus Tools",
+    "description": "",
+    "tags": [
+      "Collections",
+      "Guides"
+    ],
+    "url": "https://linguistics.stanford.edu/resources/resources-corpora/corpus-tools",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 62,
+    "title": "Software – Laurence Anthony’s Website",
+    "description": "",
+    "tags": [
+      "Software"
+    ],
+    "url": "https://www.laurenceanthony.net/software.html",
+    "beginnerFriendly": true
+  },
+  {
+    "id": 63,
+    "title": "EduTech Data Mining Tools",
+    "description": "",
+    "tags": [
+      "Collections"
+    ],
+    "url": "https://edutechwiki.unige.ch/en/Form:Data_mining_and_learning_analytics_tools",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 64,
+    "title": "Tools for Corpus Linguistics",
+    "description": "A comprehensive list of tools used in corpus compilation and analysis.",
+    "tags": [
+      "Collections"
+    ],
+    "url": "https://corpus-analysis.com/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 65,
+    "title": "Corpus-tools.org",
+    "description": "With corpus-tools.org we provide software to annotate, migrate, and analyze linguistic data.",
+    "tags": [
+      "Collections"
+    ],
+    "url": "https://corpus-tools.org/home/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 66,
+    "title": "CLARIN Resource Families",
+    "description": "The CLARIN Resource Families provide a user-friendly overview per data type of the available language resources in the CLARIN infrastructure for researchers from the digital humanities, social sciences and human language technologies.",
+    "tags": [
+      "Datasets"
+    ],
+    "url": "https://www.clarin.eu/resource-families",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 67,
+    "title": "Ryan Boyd Software Suite",
+    "description": "",
+    "tags": [
+      "Software",
+      "Suite"
+    ],
+    "url": "https://www.ryanboyd.io/software/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 68,
+    "title": "Notepad++",
+    "description": "Notepad++ is a free, open-source text and source code editor that offers advanced features like syntax highlighting, code folding, and a tabbed editing interface to work with multiple files simultaneously.",
+    "tags": [
+      "Software",
+      "Text"
+    ],
+    "url": "https://notepad-plus-plus.org/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 69,
+    "title": "NLP4Ed Community",
+    "description": "",
+    "tags": [
+      "Community",
+      "by NLP4Ed"
+    ],
+    "url": "https://nlp4ed.com",
+    "beginnerFriendly": true
+  },
+  {
+    "id": 70,
+    "title": "n8n x corpus linguistics",
+    "description": "",
+    "tags": [
+      "Guides",
+      "by NLP4Ed"
+    ],
+    "url": "https://www.youtube.com/playlist?list=PLOhrNGAus4NH7BH30fxDhedEbYNrqt2Uh",
+    "beginnerFriendly": true
+  },
+  {
+    "id": 71,
+    "title": "Corpora & Applied Linguistics",
+    "description": "",
+    "tags": [
+      "Guides"
+    ],
+    "url": "https://www.youtube.com/@corporaappliedlinguistics8358/playlists",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 72,
+    "title": "Orange Textable",
+    "description": "Free open-source software to analyze and process your texts visually.",
+    "tags": [
+      "Software",
+      "Visualization"
+    ],
+    "url": "http://textable.io/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 73,
+    "title": "SkELL for Learners",
+    "description": "SKELL is a simple tool for students and teachers of English to easily check whether or how a particular phrase or a word is used by real speakers of English.",
+    "tags": [
+      "KWIC",
+      "Tools"
+    ],
+    "url": "https://skell.sketchengine.eu/",
+    "beginnerFriendly": true
+  },
+  {
+    "id": 74,
+    "title": "CROW Corpus",
+    "description": "CROW corpus holds over 18,000 texts produced by undergraduate students in first year writing. Students represented in the corpus come from over 50 different countries and are majoring across over 100 programs.",
+    "tags": [
+      "Datasets"
+    ],
+    "url": "https://writecrow.org/about-our-corpus/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 75,
+    "title": "MICUSP Student Papers",
+    "description": "The Michigan Corpus of Upper-level Student Papers (MICUSP) is a free online collection of 829 high-scoring academic papers written by advanced University of Michigan students between 2002 and 2009, totaling approximately 2.6 million words.",
+    "tags": [
+      "Datasets"
+    ],
+    "url": "https://micusp.elicorpora.info/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 76,
+    "title": "CNN Transcripts",
+    "description": "CNN provides transcripts of its shows and special reports on its official website.",
+    "tags": [
+      "Datasets"
+    ],
+    "url": "https://transcripts.cnn.com/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 77,
+    "title": "Movies/TV shows subtitles",
+    "description": "OpenSubtitles is a major online database for movie and TV show subtitles, offering a vast, community-driven library in over a hundred languages.",
+    "tags": [
+      "Datasets"
+    ],
+    "url": "https://opensubtitles.org/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 78,
+    "title": "The Michigan Corpora",
+    "description": "Two significant language corpora, the Michigan Corpus of Spoken Academic English (MICASE), and the Michigan Corpus of Upper-Level Student Papers (MICUSP) were developed at the English Language Institute. Teachers and researchers across the world use these historically important collections of language for linguistic analysis, classroom activities, and materials development.",
+    "tags": [
+      "Datasets"
+    ],
+    "url": "https://lsa.umich.edu/eli/language-resources/micase-micusp.html",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 79,
+    "title": "quanteda R Package",
+    "description": "quanteda is an R package for managing and analyzing text, created and maintained by Kenneth Benoit and Kohei Watanabe.",
+    "tags": [
+      "R"
+    ],
+    "url": "https://quanteda.io/index.html",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 80,
+    "title": "LF Aligner",
+    "description": "LF Aligner helps translators create translation memories from texts and their translations. It relies on Hunalign for automatic sentence pairing. Input: txt, doc, docx, rtf, pdf, html. Output: tab delimited txt, TMX and xls. With web features.",
+    "tags": [
+      "Software"
+    ],
+    "url": "https://sourceforge.net/projects/aligner/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 81,
+    "title": "CorpusMate",
+    "description": "The proposed corpus platform (CorpusMate), is developed by Dr. Peter Crosthwaite (UQ) and Dr. Vít Baisa, creator of the popular corpus platforms SkELL and Versatext, will provide a streamlined, simplified language data analysis experience for younger (L2) learners, incorporating the best features of currently available tools into an integrated digital environment designed specifically for secondary school learners.",
+    "tags": [
+      "KWIC",
+      "Tools"
+    ],
+    "url": "https://corpusmate.com/",
+    "beginnerFriendly": true
+  },
+  {
+    "id": 82,
+    "title": "Netspeak",
+    "description": "Netspeak helps you to search for words you don't know, yet. It is a new kind of dictionary that contains everything that has ever been written on the web.",
+    "tags": [
+      "KWIC",
+      "Tools"
+    ],
+    "url": "https://netspeak.org/",
+    "beginnerFriendly": true
+  },
+  {
+    "id": 83,
+    "title": "VersaText",
+    "description": "VersaText allows you to paste text, then click Word cloud or Profiler. It provides sample texts and a detailed description.",
+    "tags": [
+      "KWIC",
+      "Tools",
+      "Vocab Profiler"
+    ],
+    "url": "https://versatext.versatile.pub/",
+    "beginnerFriendly": true
+  },
+  {
+    "id": 84,
+    "title": "TextAssociations",
+    "description": "TextAssociations.jl is a Julia package for word association analysis and corpus-based research in linguistics, social sciences and the digital humanities. It provides a unified framework to quantify lexical relationships within texts and corpora using 51 association measures—spanning statistical, information-theoretic, epidemiological and lexical-gravity approaches—for transparent, data-driven analysis of how words co-occur and connect across discourse.",
+    "tags": [
+      "Julia"
+    ],
+    "url": "https://github.com/atantos/TextAssociations.jl",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 85,
+    "title": "Open Access Theses and Dissertations",
+    "description": "OATD.org aims to be the best possible resource for finding open access graduate theses and dissertations published around the world. Metadata (information about the theses) comes from over 1100 colleges, universities, and research institutions. OATD currently indexes 7,464,811 theses and dissertations.",
+    "tags": [
+      "Datasets"
+    ],
+    "url": "https://www.oatd.org/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 86,
+    "title": "Quantitative Corpus Linguistics with R",
+    "description": "As in its first edition, the new edition of Quantitative Corpus Linguistics with R demonstrates how to process corpus-linguistic data with the open-source programming language and environment R.",
+    "tags": [
+      "R"
+    ],
+    "url": "https://www.taylorfrancis.com/books/mono/10.4324/9781315746210/quantitative-corpus-linguistics-stefan-th-gries",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 87,
+    "title": "Lexical Complexity Analyzer",
+    "description": "The Lexical Complexity Analyzer (LCA), developed by Professor Xiaofei Lu at The Pennsylvania State University, is a tool that allows language teachers and researchers to analyze the lexical complexity of written English language samples, using 25 different measures of lexical density, variation and sophistication proposed in the first and second language development literature.",
+    "tags": [
+      "Tools"
+    ],
+    "url": "https://aihaiyang.com/software/lca/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 88,
+    "title": "L2 Syntactical Complexity Analyzer",
+    "description": "The L2 Syntactic Complexity Analyzer (L2SCA), developed by Professor Xiaofei Lu at The Pennsylvania State University, is a tool that allows language teachers and researchers to analyze the syntactic complexity of written English language samples, using 14 different measures covering (1) length of production units, (2) amounts of coordination, (3) amounts of subordination, (4) degree of phrasal sophistication and overall sentence complexity.",
+    "tags": [
+      "Tools"
+    ],
+    "url": "https://aihaiyang.com/software/l2sca/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 89,
+    "title": "Arabic and Darija NLP Resources",
+    "description": "A curated collection of resources and repositories for Natural Language Processing (NLP) tasks specific to Darija, the Moroccan Arabic dialect. This repository aims to provide students and researchers with a comprehensive collection of tools, datasets, models, and code examples to facilitate Darija processing and analysis.",
+    "tags": [
+      "Datasets"
+    ],
+    "url": "https://github.com/MoroccoAI/Arabic-Darija-NLP-Resources",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 90,
+    "title": "Data.gouv Education Datasets",
+    "description": "Open data in the field of education (Morocco).",
+    "tags": [
+      "Datasets"
+    ],
+    "url": "https://data.gov.ma/data/fr/group/education",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 91,
+    "title": "WikiCorpus",
+    "description": "The Wikicorpus is a trilingual corpus (Catalan, Spanish, English) that contains large portions of the Wikipedia (based on a 2006 dump) and has been automatically enriched with linguistic information. In its present version, it contains over 750 million words.",
+    "tags": [
+      "Datasets"
+    ],
+    "url": "https://huggingface.co/datasets/gboleda/wikicorpus",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 92,
+    "title": "Stanford Corpora",
+    "description": "The Stanford Linguistics Department's website serves as a resource hub for accessing various linguistic corpora, detailing information on available corpora, access procedures, and support tools.",
+    "tags": [
+      "Datasets"
+    ],
+    "url": "https://linguistics.stanford.edu/resources/resources-corpora/accessing-corpora",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 93,
+    "title": "Literary and Linguistic Data Service",
+    "description": "A digital repository is like a library for literary and linguistic data, allowing users to: Search for texts and other resources and easily download them; Deposit data and be sure that it is safely stored, everyone can find it, use it, correctly cite it (with appropriate acknowledgements and restrictions).",
+    "tags": [
+      "Datasets"
+    ],
+    "url": "https://ota.ox.ac.uk/llds/xmlui/",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 94,
+    "title": "OpenSLR",
+    "description": "OpenSLR is a site devoted to hosting speech and language resources, such as training corpora for speech recognition, and software related to speech recognition. We intend to be a convenient place for anyone to put resources that they have created, so that they can be downloaded publicly.",
+    "tags": [
+      "Datasets"
+    ],
+    "url": "https://openslr.org/resources.php",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 95,
+    "title": "SenseCEFR",
+    "description": "A context-aware CEFR vocabulary profiler that solves the polysemy flatline problem through algorithmic & LLM-driven Word Sense Disambiguation.",
+    "tags": [
+      "Vocab Profiler",
+      "by NLP4Ed"
+    ],
+    "url": "https://nlp4ed.com/SenseCEFR/",
+    "beginnerFriendly": true
+  }
+]

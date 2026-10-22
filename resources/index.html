@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources Repository - NLP4Ed</title>
+  <meta name="description" content="Explore NLP4Ed's curated repository of open-source tools, desktop software, datasets, guides, and NLP workflows for EFL teachers and researchers.">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- og tags -->
+  <meta property="og:title" content="NLP4Ed Resource Repository">
+  <meta property="og:description" content="Curated tools, software, datasets, and guides for EFL education and applied linguistics.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="../img/nlp4ed_logo.svg">
+
+  <link rel="icon" type="image/svg+xml" href="../img/nlp4ed_logo.svg">
+
+  <!-- google font: ibm plex mono (exact match with home page) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- shared portal styles & dedicated resources styles -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/resources.css">
+</head>
+<body class="resources-page">
+  <!-- a11y skip link -->
+  <a href="#resources-main" class="skip-link">Skip to main content</a>
+
+  <!-- announcement bar -->
+  <div id="announcement-banner-container">
+    <aside class="announcement-bar" role="region" aria-label="Announcement">
+      <div class="container announcement-inner">
+        <a href="https://nlp4ed.com/SenseCEFR/" target="_blank" rel="noopener noreferrer" class="announcement-link">
+          <span class="announcement-badge">New Tool</span>
+          <span>explore SenseCEFR: context-aware vocabulary profiler!</span>
+        </a>
+      </div>
+    </aside>
+  </div>
+
+  <!-- site header / navigation (exact match with home page) -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="https://nlp4ed.com" class="brand-logo-link" aria-label="NLP4Ed Home">
+        <img src="../img/nlp4ed_logo.svg" alt="NLP4Ed Logo" class="brand-logo-img">
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="https://nlp4ed.com#home" class="nav-link">Home</a></li>
+          <li><a href="./" class="nav-link active">Resources</a></li>
+          <li><a href="https://nlp4ed.com#webinars" class="nav-link">Webinars</a></li>
+          <li><a href="https://nlp4ed.com#team" class="nav-link">Team</a></li>
+          <li><a href="https://forms.gle/PF9S8bcZaAtJB3YA8" target="_blank" rel="noopener noreferrer" class="nav-link">Join us!</a></li>
+          <li><a href="https://calendly.com/yassine_l/nlp4ed" target="_blank" rel="noopener noreferrer" class="nav-link">Appointment</a></li>
+          <li><a href="mailto:nlp4ed@gmail.com" class="nav-link">Contact us</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="social-links" aria-label="Social Profiles">
+          <a href="https://www.linkedin.com/company/nlp4ed/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn">
+            <svg class="icon icon-filled" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="https://github.com/NLP4Ed" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub">
+            <svg class="icon icon-filled" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@NLP4Ed" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="YouTube">
+            <svg class="icon icon-filled" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+          </a>
+          <a href="https://x.com/NLP4Ed" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="X (Twitter)">
+            <svg class="icon icon-filled" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+
+        <button type="button" class="mobile-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
+          <svg class="icon" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="resources-main">
+    <!-- hero header section -->
+    <section class="resources-hero">
+      <div class="container">
+        <!-- breadcrumb -->
+        <nav class="resources-breadcrumb" aria-label="Breadcrumb">
+          <a href="https://nlp4ed.com">
+            <svg class="icon" style="width: 14px; height: 14px;" viewBox="0 0 24 24"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            Home
+          </a>
+          <span class="breadcrumb-separator">/</span>
+          <span style="color: var(--fg-primary); font-weight: 500;">Resources Repository</span>
+        </nav>
+
+        <div class="resources-hero-inner">
+          <div class="resources-hero-main">
+            <div class="hero-pill-badge">
+              <span class="hero-pill-dot"></span>
+              <span>Last edited &middot; October 21, 2026</span>
+            </div>
+            <h1 class="resources-hero-title">
+              NLP4Ed Resource Repository
+            </h1>
+            <p class="resources-hero-desc">
+              A curated catalog of language corpora, desktop software, web tools, Python packages, and tutorials designed for EFL educators, applied linguists, and researchers.
+            </p>
+          </div>
+
+          <div class="resources-hero-actions">
+            <a href="https://forms.gle/CfJCcztDZGZc7Yio9" target="_blank" rel="noopener noreferrer" class="btn-shadcn btn-shadcn-primary">
+              <svg class="icon" style="width: 14px; height: 14px;" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+              Suggest a Resource
+            </a>
+            <a href="mailto:nlp4ed@gmail.com?subject=Report%20a%20Broken%20Link%20-%20NLP4Ed" class="btn-shadcn btn-shadcn-outline">
+              <svg class="icon" style="width: 14px; height: 14px;" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              Report a broken link
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- stats overview section -->
+    <section class="resources-stats-section" aria-label="Repository Statistics">
+      <div class="container">
+        <!-- 4 key metric cards -->
+        <div class="stats-overview-grid">
+          <div class="shadcn-metric-card">
+            <div class="metric-header">
+              <span class="metric-title">Total Resources</span>
+            </div>
+            <div id="metric-total" class="metric-value">95</div>
+            <p class="metric-sub">Curated NLP &amp; linguistic entries</p>
+          </div>
+
+          <div class="shadcn-metric-card">
+            <div class="metric-header">
+              <span class="metric-title">Tools &amp; Software</span>
+            </div>
+            <div id="metric-tools" class="metric-value">36</div>
+            <p class="metric-sub">Web tools &amp; desktop applications</p>
+          </div>
+
+          <div class="shadcn-metric-card">
+            <div class="metric-header">
+              <span class="metric-title">Datasets &amp; Corpora</span>
+            </div>
+            <div id="metric-datasets" class="metric-value">15</div>
+            <p class="metric-sub">Language corpora &amp; research datasets</p>
+          </div>
+
+          <div class="shadcn-metric-card">
+            <div class="metric-header">
+              <span class="metric-title">Beginner-Friendly</span>
+              <svg class="verified-badge-icon" viewBox="0 0 16 16" width="15" height="15" fill="#0B5035" aria-hidden="true">
+                <path fill="#0B5035" d="m11.335 2.065l.076.153l.577 1.533c.045.12.14.216.261.261l1.48.555c.65.244.999.938.826 1.595l-.042.13l-.688 1.523a.45.45 0 0 0 0 .37l.653 1.439a1.34 1.34 0 0 1-.543 1.711l-.153.076l-1.533.577a.45.45 0 0 0-.261.261l-.555 1.48a1.34 1.34 0 0 1-1.595.826l-.13-.042l-1.523-.688a.45.45 0 0 0-.37 0l-1.439.654a1.34 1.34 0 0 1-1.711-.544l-.076-.153l-.577-1.533a.45.45 0 0 0-.261-.261l-1.48-.555a1.34 1.34 0 0 1-.826-1.595l.042-.13l.689-1.523a.45.45 0 0 0 0-.37l-.654-1.439a1.34 1.34 0 0 1 .543-1.711l.153-.076l1.533-.577a.45.45 0 0 0 .261-.261l.555-1.48a1.34 1.34 0 0 1 1.595-.826l.13.042l1.523.689a.45.45 0 0 0 .37 0l1.439-.654a1.34 1.34 0 0 1 1.711.543m-1.171 3.64L6.978 9.348L5.816 8.184a.447.447 0 1 0-.632.632l1.5 1.5a.447.447 0 0 0 .652-.022l3.5-4a.447.447 0 0 0-.672-.588"/>
+              </svg>
+            </div>
+            <div id="metric-beginner" class="metric-value">20</div>
+            <p class="metric-sub">Accessible with no coding required</p>
+          </div>
+        </div>
+
+        <!-- interactive charts -->
+        <div class="charts-grid">
+          <!-- bar chart: category distribution -->
+          <div class="shadcn-chart-card">
+            <div class="chart-card-header">
+              <div>
+                <h3 class="chart-card-title">Top Resource Categories</h3>
+                <p class="chart-card-subtitle">Distribution across tools, software, datasets, and guides</p>
+              </div>
+            </div>
+            <div class="chart-canvas-wrapper">
+              <canvas id="chart-categories" aria-label="Categories Bar Chart" role="img"></canvas>
+            </div>
+          </div>
+
+          <!-- polar area chart: programming language & environment -->
+          <div class="shadcn-chart-card">
+            <div class="chart-card-header">
+              <div>
+                <h3 class="chart-card-title">Programming Language &amp; Environment</h3>
+                <p class="chart-card-subtitle">Distribution across web tools, desktop apps, Python, R, and workflows</p>
+              </div>
+            </div>
+            <div class="chart-canvas-wrapper polar-wrapper">
+              <canvas id="chart-formats" aria-label="Programming Language and Environment Polar Area Chart" role="img"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- repository explorer / table & grid -->
+    <section class="section" style="padding-top: 0;" aria-label="Resource Catalog">
+      <div class="container">
+        <!-- toolbar controls -->
+        <div class="resources-toolbar-section">
+          <div class="resources-toolbar">
+            <div class="toolbar-top-row">
+              <!-- search input -->
+              <div class="search-input-wrapper">
+                <svg class="search-icon-inside" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <input
+                  type="text"
+                  id="resources-search"
+                  class="search-input-shadcn"
+                  placeholder="Filter resources by title, description, or keyword..."
+                  aria-label="Filter resources"
+                >
+                <button id="search-clear-btn" class="search-clear-btn" aria-label="Clear search">&times;</button>
+              </div>
+
+              <!-- filters & controls -->
+              <div class="toolbar-controls">
+                <!-- category select -->
+                <select id="category-filter" class="shadcn-select" aria-label="Filter by Category">
+                  <option value="all">All Categories (95)</option>
+                  <option value="by NLP4Ed">by NLP4Ed (6)</option>
+                  <option value="Tools">Tools (19)</option>
+                  <option value="Software">Software (17)</option>
+                  <option value="Datasets">Datasets (15)</option>
+                  <option value="Guides">Guides (12)</option>
+                  <option value="Python Libraries">Python Libraries (8)</option>
+                  <option value="Text">Text &amp; Corpora (7)</option>
+                  <option value="Books/Papers">Books &amp; Papers (7)</option>
+                  <option value="Vocab Profiler">Vocab Profilers (7)</option>
+                  <option value="Visualization">Visualization (5)</option>
+                  <option value="Collections">Collections (5)</option>
+                  <option value="Jupyter Notebooks">Jupyter Notebooks (4)</option>
+                  <option value="KWIC">KWIC Concordancers (4)</option>
+                  <option value="R">R Packages (4)</option>
+                  <option value="Courses">Courses (2)</option>
+                  <option value="Scrapers">Scrapers (2)</option>
+                </select>
+
+                <!-- beginner friendly toggle with solid green rosette -->
+                <button type="button" id="beginner-toggle" class="toggle-filter-btn" aria-pressed="false" title="Beginner-Friendly Only">
+                  <svg class="verified-badge-icon" viewBox="0 0 16 16" width="14" height="14" fill="#0B5035" aria-hidden="true">
+                    <path fill="#0B5035" d="m11.335 2.065l.076.153l.577 1.533c.045.12.14.216.261.261l1.48.555c.65.244.999.938.826 1.595l-.042.13l-.688 1.523a.45.45 0 0 0 0 .37l.653 1.439a1.34 1.34 0 0 1-.543 1.711l-.153.076l-1.533.577a.45.45 0 0 0-.261.261l-.555 1.48a1.34 1.34 0 0 1-1.595.826l-.13-.042l-1.523-.688a.45.45 0 0 0-.37 0l-1.439.654a1.34 1.34 0 0 1-1.711-.544l-.076-.153l-.577-1.533a.45.45 0 0 0-.261-.261l-1.48-.555a1.34 1.34 0 0 1-.826-1.595l.042-.13l.689-1.523a.45.45 0 0 0 0-.37l-.654-1.439a1.34 1.34 0 0 1 .543-1.711l.153-.076l1.533-.577a.45.45 0 0 0 .261-.261l.555-1.48a1.34 1.34 0 0 1 1.595-.826l.13.042l1.523.689a.45.45 0 0 0 .37 0l1.439-.654a1.34 1.34 0 0 1 1.711.543m-1.171 3.64L6.978 9.348L5.816 8.184a.447.447 0 1 0-.632.632l1.5 1.5a.447.447 0 0 0 .652-.022l3.5-4a.447.447 0 0 0-.672-.588"/>
+                  </svg>
+                  <span>Beginner-Friendly</span>
+                </button>
+
+                <!-- sort select -->
+                <select id="sort-select" class="shadcn-select" aria-label="Sort Order">
+                  <option value="default">Sort: Default</option>
+                  <option value="title-asc">Title (A &rarr; Z)</option>
+                  <option value="title-desc">Title (Z &rarr; A)</option>
+                  <option value="category">Category</option>
+                </select>
+
+                <!-- page size: 35 by 35 by default -->
+                <select id="page-size-select" class="shadcn-select" aria-label="Rows per page">
+                  <option value="35" selected>35 rows</option>
+                  <option value="70">70 rows</option>
+                  <option value="all">Show All</option>
+                </select>
+
+                <!-- view mode switcher -->
+                <div class="view-mode-toggle" role="group" aria-label="View Mode">
+                  <button type="button" id="view-table-btn" class="view-btn active" title="Table View" aria-label="Table View">
+                    <svg class="icon" style="width: 14px; height: 14px;" viewBox="0 0 24 24"><path d="M3 3h18v18H3z"></path><path d="M3 9h18"></path><path d="M3 15h18"></path><path d="M9 3v18"></path></svg>
+                  </button>
+                  <button type="button" id="view-grid-btn" class="view-btn" title="Grid View" aria-label="Grid View">
+                    <svg class="icon" style="width: 14px; height: 14px;" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- active filter chips bar -->
+            <div id="active-filters-bar" class="active-filters-bar" style="display: none;">
+              <div class="active-chips-list" id="active-chips-list"></div>
+              <div style="display: flex; align-items: center; gap: 0.75rem;">
+                <span id="results-count" class="results-count-text"></span>
+                <button type="button" id="reset-filters-btn" class="btn-reset-filters">Reset filters</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- table view container (follows responsive-table guide) -->
+        <div id="table-view-container" class="table-container-outer">
+          <div tabindex="0" role="region" aria-label="NLP4Ed Resources Table" class="table-wrapper">
+            <table class="shadcn-table">
+              <thead>
+                <tr>
+                  <th class="sortable" data-sort="title">
+                    <div class="th-sort-wrapper">
+                      <span>Resource</span>
+                      <span class="sort-indicator">&udarr;</span>
+                    </div>
+                  </th>
+                  <th class="sortable" data-sort="category">
+                    <div class="th-sort-wrapper">
+                      <span>Category</span>
+                      <span class="sort-indicator">&udarr;</span>
+                    </div>
+                  </th>
+                  <th>Description</th>
+                  <th style="text-align: right;">Action</th>
+                </tr>
+              </thead>
+              <tbody id="resources-table-body">
+                <!-- dynamically injected rows -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- grid view container -->
+        <div id="grid-view-container" style="display: none;">
+          <div id="resources-cards-grid" class="resources-cards-grid">
+            <!-- dynamically injected cards -->
+          </div>
+        </div>
+
+        <!-- empty search results state -->
+        <div id="empty-state" class="empty-state" style="display: none;">
+          <svg class="empty-state-icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+          <h3 class="empty-state-title">No resources found</h3>
+          <p class="empty-state-desc">
+            No matching items found for your current search or filter combination. Try adjusting keywords or clearing active filters.
+          </p>
+          <button type="button" onclick="document.getElementById('reset-filters-btn').click()" class="btn-shadcn btn-shadcn-outline">
+            Reset All Filters
+          </button>
+        </div>
+
+        <!-- pagination container -->
+        <div id="pagination-container" class="pagination-container">
+          <div id="pagination-info" class="pagination-info">Showing 1&ndash;35 of 95 resources</div>
+          <div id="pagination-actions" class="pagination-actions">
+            <!-- dynamically generated pagination buttons -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- shadcn accessible dialog for resource quick preview -->
+  <dialog id="preview-dialog" class="shadcn-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-content">
+      <div class="dialog-header">
+        <div>
+          <h2 id="dialog-title" class="dialog-title">Resource Title</h2>
+          <span id="dialog-domain" class="card-domain">example.com</span>
+        </div>
+        <button type="button" id="dialog-close-btn" class="dialog-close-btn" aria-label="Close dialog">&times;</button>
+      </div>
+
+      <div class="dialog-body">
+        <p id="dialog-desc">Full description of the resource.</p>
+
+        <div class="dialog-meta-list">
+          <div class="dialog-meta-row">
+            <span class="dialog-meta-label">Tags / Categories</span>
+            <div id="dialog-tags" class="tags-badge-group"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dialog-actions">
+        <a id="dialog-open-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn-shadcn btn-shadcn-primary">
+          Open Website
+        </a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- site footer (exact match with home page) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-layout">
+        <div class="footer-logo-col">
+          <a href="https://nlp4ed.com" class="footer-logo-link" aria-label="NLP4Ed Home">
+            <img src="../img/nlp4ed_logo.svg" alt="NLP4Ed Logo" class="footer-logo-img">
+          </a>
+        </div>
+
+        <div class="footer-main-col">
+          <p class="footer-tagline">
+            Democratizing natural language processing and AI advancements for English language education and applied linguistics research.
+          </p>
+
+          <div class="country-badge">
+            <svg class="icon" style="width: 14px; height: 14px;" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <span>Made in Morocco</span>
+          </div>
+
+          <div class="footer-divider"></div>
+
+          <div class="footer-copyright">
+            Copyright &copy; NLP4Ed. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- self-hosted vendor & app scripts -->
+  <script src="../js/chart.min.js"></script>
+  <script src="../js/resources-data.js"></script>
+  <script src="../js/resources.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
