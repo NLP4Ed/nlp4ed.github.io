@@ -102,9 +102,16 @@ body.resources-page {
 
 /* resources hero header */
 .resources-hero {
+  position: relative;
+  overflow: hidden;
   padding: 2rem 0 2rem;
   border-bottom: 1px solid var(--border-subtle);
   background: var(--bg-white);
+}
+
+.resources-hero .container {
+  position: relative;
+  z-index: 1;
 }
 
 .resources-hero-inner {
@@ -267,8 +274,6 @@ body.resources-page {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  min-height: 110px;
 }
 
 .shadcn-metric-card:hover {
@@ -279,6 +284,7 @@ body.resources-page {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 1.25rem;
   margin-bottom: 0.5rem;
 }
 
@@ -289,6 +295,7 @@ body.resources-page {
   text-transform: uppercase;
   color: var(--fg-muted);
   font-family: var(--font-mono);
+  line-height: 1.25rem;
 }
 
 .metric-icon {
@@ -304,12 +311,14 @@ body.resources-page {
   color: var(--fg-primary);
   line-height: 1.1;
   font-family: var(--font-mono);
+  margin-bottom: 0.35rem;
 }
 
 .metric-sub {
   font-size: 0.75rem;
   color: var(--fg-muted);
-  margin-top: 0.35rem;
+  line-height: 1.4;
+  margin-top: 0;
 }
 
 /* charts section */
@@ -752,15 +761,22 @@ body.resources-page {
   max-width: 280px;
 }
 
+.table-title-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+  max-width: 100%;
+}
+
 .resource-title-link {
   font-weight: 600;
   color: var(--fg-primary);
   text-decoration: none;
-  display: block;
+  display: inline-block;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 250px;
+  max-width: 240px;
   line-height: 1.35;
   transition: color 150ms ease;
 }
@@ -833,7 +849,12 @@ body.resources-page {
   position: relative;
   cursor: pointer;
   vertical-align: middle;
-  margin-left: 0.35rem;
+  margin-left: 0.15rem;
+  line-height: 1;
+}
+
+.table-title-row .verified-badge-wrap {
+  margin-left: 0.1rem;
 }
 
 .verified-badge-icon {

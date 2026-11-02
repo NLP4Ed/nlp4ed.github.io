@@ -1,9 +1,31 @@
 // dom ready bootstrapper
 document.addEventListener("DOMContentLoaded", () => {
+  initLenis();
   initAnnouncementBanner();
   initMobileNav();
   initScrollspy();
+  initStatsCountUp();
 });
+
+// initialize Lenis smooth scroll (darkroomengineering/lenis)
+function initLenis() {
+  if (typeof Lenis === 'undefined') return null;
+
+  const lenis = new Lenis({
+    autoRaf: true,
+    anchors: {
+      offset: -75,
+    },
+    smoothWheel: true,
+    syncTouch: false,
+    lerp: 0.16,
+    wheelMultiplier: 1.0,
+    overscroll: false,
+  });
+
+  window.lenis = lenis;
+  return lenis;
+}
 
 // inject the announcement bar if enabled in config
 function initAnnouncementBanner() {
@@ -94,4 +116,98 @@ function escapeHtml(str) {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#039;");
+}
+
+// smooth animated count-up helper
+function animateCountUp(element, target, options = {}) {
+  if (!element) return;
+  const {
+    duration = 1800,
+    prefix = '',
+    suffix = '',
+    startVal = 0,
+  } = options;
+
+  const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (prefersReducedMotion || duration <= 0) {
+    element.textContent = `${prefix}${target}${suffix}`;
+    return;
+  }
+
+  let startTime = null;
+
+  function easeOutCubic(t) {
+    return 1 - Math.pow(1 - t, 3);
+  }
+
+  function frame(timestamp) {
+    if (!startTime) startTime = timestamp;
+    const elapsed = timestamp - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    const easedProgress = easeOutCubic(progress);
+    const currentVal = Math.round(startVal + (target - startVal) * easedProgress);
+
+    element.textContent = `${prefix}${currentVal}${suffix}`;
+
+    if (progress < 1) {
+      requestAnimationFrame(frame);
+    } else {
+      element.textContent = `${prefix}${target}${suffix}`;
+    }
+  }
+
+  requestAnimationFrame(frame);
+}
+
+// animate count-up on elements in "What We Achieved So Far" when visible on user's screen
+function initStatsCountUp() {
+  const statNumbers = document.querySelectorAll(".stats-grid .stat-number");
+  if (!statNumbers.length) return;
+
+  const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!("IntersectionObserver" in window) || prefersReducedMotion) {
+    statNumbers.forEach(el => {
+      const prefix = el.dataset.prefix || (el.textContent.trim().startsWith("+") ? "+" : "");
+      const target = parseInt(el.dataset.target || el.textContent.replace(/[^\d]/g, ""), 10);
+      if (!isNaN(target)) el.textContent = `${prefix}${target}`;
+    });
+    return;
+  }
+
+  // Pre-initialize display to 0 to prevent snap when scrolling into view
+  statNumbers.forEach(el => {
+    const prefix = el.dataset.prefix || (el.textContent.trim().startsWith("+") ? "+" : "");
+    el.textContent = `${prefix}0`;
+  });
+
+  const animateBox = (box) => {
+    const el = box.querySelector(".stat-number") || box;
+    if (!el || el.dataset.hasCounted) return;
+    el.dataset.hasCounted = "true";
+
+    const prefix = el.dataset.prefix || (el.textContent.trim().startsWith("+") ? "+" : "");
+    const target = parseInt(el.dataset.target || el.textContent.replace(/[^\d]/g, ""), 10);
+    if (isNaN(target)) return;
+
+    animateCountUp(el, target, {
+      duration: 1800,
+      prefix: prefix,
+      startVal: 0,
+    });
+  };
+
+  const statBoxes = document.querySelectorAll(".stats-grid .stat-box");
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && entry.intersectionRatio > 0.1) {
+        animateBox(entry.target);
+        obs.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: [0.15, 0.3, 0.5]
+  });
+
+  statBoxes.forEach(box => observer.observe(box));
 }

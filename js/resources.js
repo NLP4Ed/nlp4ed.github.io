@@ -88,22 +88,101 @@
       .replace(/'/g, '&#039;');
   }
 
-  // initialize metric numbers
+  // smooth animated count-up helper
+  function animateCountUp(element, target, options = {}) {
+    if (!element) return;
+    const {
+      duration = 1800,
+      prefix = '',
+      suffix = '',
+      startVal = 0,
+    } = options;
+
+    const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReducedMotion || duration <= 0) {
+      element.textContent = `${prefix}${target}${suffix}`;
+      return;
+    }
+
+    let startTime = null;
+
+    function easeOutCubic(t) {
+      return 1 - Math.pow(1 - t, 3);
+    }
+
+    function frame(timestamp) {
+      if (!startTime) startTime = timestamp;
+      const elapsed = timestamp - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      const easedProgress = easeOutCubic(progress);
+      const currentVal = Math.round(startVal + (target - startVal) * easedProgress);
+
+      element.textContent = `${prefix}${currentVal}${suffix}`;
+
+      if (progress < 1) {
+        requestAnimationFrame(frame);
+      } else {
+        element.textContent = `${prefix}${target}${suffix}`;
+      }
+    }
+
+    requestAnimationFrame(frame);
+  }
+
+  // initialize metric numbers with smooth count-up animation when visible on screen
   function initMetrics() {
     const totalCount = allResources.length;
     const beginnerCount = allResources.filter(r => r.beginnerFriendly).length;
     const datasetsCount = allResources.filter(r => r.tags.includes('Datasets')).length;
     const toolsAndSoftwareCount = allResources.filter(r => r.tags.includes('Tools') || r.tags.includes('Software')).length;
 
-    const elTotal = document.getElementById('metric-total');
-    const elTools = document.getElementById('metric-tools');
-    const elDatasets = document.getElementById('metric-datasets');
-    const elBeginner = document.getElementById('metric-beginner');
+    const metricsConfig = [
+      { id: 'metric-total', target: totalCount },
+      { id: 'metric-tools', target: toolsAndSoftwareCount },
+      { id: 'metric-datasets', target: datasetsCount },
+      { id: 'metric-beginner', target: beginnerCount }
+    ];
 
-    if (elTotal) elTotal.textContent = totalCount;
-    if (elTools) elTools.textContent = toolsAndSoftwareCount;
-    if (elDatasets) elDatasets.textContent = datasetsCount;
-    if (elBeginner) elBeginner.textContent = beginnerCount;
+    const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReducedMotion || !("IntersectionObserver" in window)) {
+      metricsConfig.forEach(m => {
+        const el = document.getElementById(m.id);
+        if (el) el.textContent = String(m.target);
+      });
+      return;
+    }
+
+    // Initialize display to 0 so there is no flash before scrolling into view
+    metricsConfig.forEach(m => {
+      const el = document.getElementById(m.id);
+      if (el) el.textContent = '0';
+    });
+
+    const animateMetricCard = (card) => {
+      const valEl = card.querySelector('.metric-value');
+      if (!valEl || valEl.dataset.hasCounted) return;
+      valEl.dataset.hasCounted = 'true';
+
+      const config = metricsConfig.find(m => m.id === valEl.id);
+      if (config) {
+        animateCountUp(valEl, config.target, { duration: 1800 });
+      }
+    };
+
+    const metricCards = document.querySelectorAll('.shadcn-metric-card');
+
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && entry.intersectionRatio > 0.1) {
+          animateMetricCard(entry.target);
+          obs.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: [0.15, 0.3, 0.5]
+    });
+
+    metricCards.forEach(card => observer.observe(card));
   }
 
   // initialize charts with shadcn slate theme
@@ -293,7 +372,11 @@
     // smooth scroll to toolbar
     const toolbar = document.querySelector('.resources-toolbar');
     if (toolbar) {
-      toolbar.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      if (window.lenis) {
+        window.lenis.scrollTo(toolbar, { offset: -75 });
+      } else {
+        toolbar.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     }
   }
 
@@ -422,7 +505,7 @@
       return `
         <tr data-id="${item.id}">
           <td class="table-title-cell">
-            <div style="display: flex; align-items: center; gap: 0.35rem; min-width: 0;">
+            <div class="table-title-row">
               <a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer" class="resource-title-link" title="${escapeHtml(item.title)}">
                 ${escapeHtml(item.title)}
               </a>
@@ -475,11 +558,11 @@
             <div class="card-header-row">
               <span class="card-domain">${escapeHtml(domain)}</span>
             </div>
-            <h3 class="card-title" style="display: flex; align-items: center; gap: 0.35rem; min-width: 0; width: 100%;">
-              <a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; min-width: 0; flex: 1 1 auto;" title="${escapeHtml(item.title)}">
+            <h3 class="card-title" style="display: flex; align-items: center; gap: 0.15rem; min-width: 0; width: 100%;">
+              <a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: inline-block; min-width: 0; flex: 0 1 auto; max-width: calc(100% - 22px);" title="${escapeHtml(item.title)}">
                 ${escapeHtml(item.title)}
               </a>
-              <span style="flex-shrink: 0; display: inline-flex;">${verifiedIcon}</span>
+              <span style="flex-shrink: 0; display: inline-flex; margin-left: 0.1rem;">${verifiedIcon}</span>
             </h3>
             <p class="card-description">
               ${descSnippet}
@@ -640,6 +723,9 @@
 
     // disable background scroll when popup is open
     document.body.style.overflow = 'hidden';
+    if (window.lenis) {
+      window.lenis.stop();
+    }
     previewDialog.showModal();
   }
 
@@ -649,6 +735,9 @@
       previewDialog.close();
     }
     document.body.style.overflow = '';
+    if (window.lenis) {
+      window.lenis.start();
+    }
   }
 
   // attach event listeners
@@ -743,7 +832,11 @@
           render();
           const target = document.querySelector('.resources-toolbar') || document.querySelector('.table-container-outer');
           if (target) {
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            if (window.lenis) {
+              window.lenis.scrollTo(target, { offset: -75 });
+            } else {
+              target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
           }
         }
       });

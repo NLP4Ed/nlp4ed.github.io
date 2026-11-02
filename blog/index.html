@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog · NLP4Ed | Natural Language Processing for Education</title>
+  <meta name="description" content="Read the latest articles, practical tutorials, and research updates on Natural Language Processing and AI in EFL education from the NLP4Ed team.">
+  <link rel="canonical" href="https://nlp4ed.com/blog/">
+
+  <!-- social metadata -->
+  <meta property="og:title" content="Blog · NLP4Ed | Natural Language Processing for Education">
+  <meta property="og:description" content="Latest articles, practical tutorials, and research updates on NLP and AI in EFL education.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nlp4ed.com/blog/">
+  <meta property="og:image" content="../img/nlp4ed_logo.svg">
+
+  <link rel="icon" type="image/svg+xml" href="../img/nlp4ed_logo.svg">
+
+  <!-- google font: ibm plex mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- core styles & blog styles -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/blog.css">
+</head>
+<body class="blog-page">
+  <!-- a11y skip link -->
+  <a href="#blog-main" class="skip-link">Skip to main content</a>
+
+  <!-- top announcement bar -->
+  <div id="announcement-banner-container">
+    <aside class="announcement-bar" role="region" aria-label="Announcement">
+      <div class="container announcement-inner">
+        <a href="https://youtu.be/QWANnIgvU74" target="_blank" rel="noopener noreferrer" class="announcement-link">
+          <span class="announcement-badge">New Video</span>
+          <span>watch our new n8n x corpus linguistics tutorial!</span>
+        </a>
+      </div>
+    </aside>
+  </div>
+
+  <!-- navbar -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="https://nlp4ed.com" class="brand-logo-link" aria-label="NLP4Ed Home">
+        <img src="../img/nlp4ed_logo.svg" alt="NLP4Ed Logo" class="brand-logo-img">
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="../#home" class="nav-link">Home</a></li>
+          <li><a href="../resources/" class="nav-link">Resources</a></li>
+          <li><a href="../#webinars" class="nav-link">Webinars</a></li>
+          <li><a href="../#team" class="nav-link">Team</a></li>
+          <li><a href="https://forms.gle/PF9S8bcZaAtJB3YA8" target="_blank" rel="noopener noreferrer" class="nav-link">Join us!</a></li>
+          <li><a href="https://calendly.com/yassine_l/nlp4ed" target="_blank" rel="noopener noreferrer" class="nav-link">Appointment</a></li>
+          <li><a href="../blog/" class="nav-link active">Blog</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="social-links" aria-label="Social Profiles">
+          <a href="https://www.linkedin.com/company/nlp4ed/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn">
+            <svg class="icon icon-filled" viewBox="-1 -1 26 26"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="https://github.com/NLP4Ed" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub">
+            <svg class="icon icon-filled" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@NLP4Ed" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="YouTube">
+            <svg class="icon icon-filled" viewBox="-1 -1 26 26"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+          </a>
+          <a href="https://x.com/NLP4Ed" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="X (Twitter)">
+            <svg class="icon icon-filled" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="mailto:nlp4ed@gmail.com" class="social-icon-btn" aria-label="Email NLP4Ed">
+            <svg class="icon" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+          </a>
+        </div>
+
+        <button type="button" class="mobile-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
+          <svg class="icon" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- main blog page -->
+  <main id="blog-main">
+    <!-- blog hero section -->
+    <section class="resources-hero">
+      <!-- MagicUI Gray-Black Light Rays -->
+      <div class="light-rays-container" aria-hidden="true">
+        <div class="light-rays-ambient"></div>
+        <div class="light-ray light-ray-1"></div>
+        <div class="light-ray light-ray-2"></div>
+        <div class="light-ray light-ray-3"></div>
+        <div class="light-ray light-ray-4"></div>
+        <div class="light-ray light-ray-5"></div>
+        <div class="light-ray light-ray-6"></div>
+        <div class="light-ray light-ray-7"></div>
+      </div>
+
+      <div class="container">
+        <!-- breadcrumb -->
+        <nav class="resources-breadcrumb" aria-label="Breadcrumb">
+          <a href="../">
+            <svg class="icon" style="width: 14px; height: 14px;" viewBox="0 0 24 24"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            Home
+          </a>
+          <span class="breadcrumb-separator">/</span>
+          <span class="breadcrumb-current">Blog</span>
+        </nav>
+
+        <div class="resources-hero-inner">
+          <div class="resources-hero-main">
+            <h1 class="resources-hero-title">
+              NLP4Ed Blog
+            </h1>
+            <p class="resources-hero-desc">
+              Insights, practical tutorials, and research updates on Natural Language Processing and AI applications for EFL education.
+            </p>
+          </div>
+
+          <div class="resources-hero-actions">
+            <a href="mailto:nlp4ed@gmail.com?subject=Pitch%20an%20Article%20-%20NLP4Ed" class="btn-shadcn btn-shadcn-primary">
+              <svg class="icon" style="width: 14px; height: 14px;" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+              Pitch an Article
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- coming soon section -->
+    <section class="blog-content-section" aria-label="Blog Articles">
+      <div class="container">
+        <div class="blog-coming-soon">
+          <svg class="icon blog-coming-soon-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          <h2 class="blog-coming-soon-title">Coming soon</h2>
+          <p class="blog-coming-soon-desc">
+            We are working on articles, practical tutorials, and research updates. Check back soon!
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-layout">
+        <div class="footer-logo-col">
+          <a href="https://nlp4ed.com" class="footer-logo-link" aria-label="NLP4Ed Home">
+            <img src="../img/nlp4ed_logo.svg" alt="NLP4Ed Logo" class="footer-logo-img">
+          </a>
+        </div>
+
+        <div class="footer-main-col">
+          <p class="footer-tagline">
+            Democratizing natural language processing and AI advancements for English language education and applied linguistics research.
+          </p>
+
+          <div class="country-badge">
+            <svg class="icon" style="width: 14px; height: 14px;" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <span>Made in Morocco</span>
+          </div>
+
+          <div class="footer-divider"></div>
+
+          <div class="footer-copyright">
+            Copyright &copy; NLP4Ed. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- scripts -->
+  <script src="../js/lenis.min.js"></script>
+  <script src="../js/config.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
