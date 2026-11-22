@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - NLP4Ed</title>
+  <link rel="icon" type="image/svg+xml" href="/img/nlp4ed_logo.svg">
+  <script>
+    /* case-insensitive redirect for github pages project repos */
+    (function () {
+      var projects = {
+        "/leximetrica": "/Leximetrica",
+        "/sensecefr": "/SenseCEFR"
+      };
+      var path = window.location.pathname;
+      var lower = path.toLowerCase();
+      for (var key in projects) {
+        if (lower === key || lower.indexOf(key + "/") === 0) {
+          var rest = path.slice(key.length) || "/";
+          var target = projects[key] + rest + window.location.search + window.location.hash;
+          if (target !== path + window.location.search + window.location.hash) {
+            document.documentElement.style.display = "none";
+            window.location.replace(target);
+            return;
+          }
+        }
+      }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'IBM Plex Mono', monospace;
+      background: #f8fafc;
+      color: #0f172a;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+    .card {
+      max-width: 460px;
+      width: 100%;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 32px 28px;
+      text-align: center;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    }
+    .logo { height: 48px; margin: 0 auto 20px; display: block; }
+    h1 { font-size: 1.5rem; margin-bottom: 8px; }
+    p { font-size: 0.88rem; color: #64748b; margin-bottom: 22px; line-height: 1.5; }
+    a.btn {
+      display: inline-block;
+      padding: 9px 18px;
+      border-radius: 8px;
+      background: #0f172a;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 0.84rem;
+      font-weight: 600;
+    }
+    a.btn:hover { background: #1e293b; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <img src="/img/nlp4ed_logo.svg" alt="NLP4Ed" class="logo">
+    <h1>404 - Page Not Found</h1>
+    <p>The page you requested does not exist or has moved.</p>
+    <a href="/" class="btn">Back to NLP4Ed</a>
+  </main>
+</body>
+</html>
