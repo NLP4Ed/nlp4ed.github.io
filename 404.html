@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>404 - NLP4Ed</title>
+  <title>Redirecting... - NLP4Ed</title>
   <link rel="icon" type="image/svg+xml" href="/img/nlp4ed_logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,7 +60,10 @@
     /* dynamic case-insensitive redirect for any nlp4ed github pages repo */
     (async function () {
       var card = document.getElementById("notFoundCard");
-      var show404 = function () { card.classList.add("visible"); };
+      var show404 = function () {
+        document.title = "404 - NLP4Ed";
+        card.classList.add("visible");
+      };
 
       var path = window.location.pathname;
       var match = path.match(/^\/([^/]+)(\/.*)?$/);
