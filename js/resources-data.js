@@ -1,6 +1,6 @@
 /**
  * nlp4ed resource repository data
- * total items: 95
+ * total items: 96
  */
 window.NLP4ED_RESOURCES = [
   {
@@ -986,6 +986,18 @@ window.NLP4ED_RESOURCES = [
       "by NLP4Ed"
     ],
     "url": "https://nlp4ed.com/SenseCEFR/",
+    "beginnerFriendly": true
+  },
+  {
+    "id": 96,
+    "title": "Leximetrica",
+    "description": "Leximetrica is a zero-server web app and zero-dependency Python library for quantitative linguistics laws and lexical dispersion / burstiness analysis.",
+    "tags": [
+      "by NLP4Ed",
+      "Tools",
+      "Quantitative Linguistics"
+    ],
+    "url": "https://nlp4ed.com/Leximetrica/",
     "beginnerFriendly": true
   }
 ];

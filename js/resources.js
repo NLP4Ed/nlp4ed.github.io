@@ -421,8 +421,16 @@
         result.sort((a, b) => (a.tags[0] || '').localeCompare(b.tags[0] || ''));
         break;
       default:
-        // preserve original curated notion order
-        result.sort((a, b) => a.id - b.id);
+        // prioritize "by NLP4Ed" entries: Leximetrica, SenseCEFR, Scrapers, remaining by NLP4Ed, then the rest
+        const getDefaultSortPriority = (item) => {
+          if (!item.tags || !item.tags.includes('by NLP4Ed')) return 100;
+          const titleLower = (item.title || '').toLowerCase();
+          if (titleLower === 'leximetrica') return 1;
+          if (titleLower === 'sensecefr') return 2;
+          if (item.tags.includes('Scrapers')) return 3;
+          return 4;
+        };
+        result.sort((a, b) => (getDefaultSortPriority(a) - getDefaultSortPriority(b)) || (a.id - b.id));
         break;
     }
 
