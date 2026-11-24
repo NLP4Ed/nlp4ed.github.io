@@ -982,8 +982,9 @@ window.NLP4ED_RESOURCES = [
     "title": "SenseCEFR",
     "description": "A context-aware CEFR vocabulary profiler that solves the polysemy flatline problem through algorithmic & LLM-driven Word Sense Disambiguation.",
     "tags": [
-      "Vocab Profiler",
-      "by NLP4Ed"
+      "by NLP4Ed",
+      "Tools",
+      "Vocab Profiler"
     ],
     "url": "https://nlp4ed.com/SenseCEFR/",
     "beginnerFriendly": true
