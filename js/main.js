@@ -11,6 +11,11 @@ document.addEventListener("DOMContentLoaded", () => {
 function initLenis() {
   if (typeof Lenis === 'undefined') return null;
 
+  // skip on touch devices and reduced motion
+  const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const hasFinePointer = !window.matchMedia || window.matchMedia('(pointer: fine)').matches;
+  if (prefersReducedMotion || !hasFinePointer) return null;
+
   const lenis = new Lenis({
     autoRaf: true,
     anchors: {
