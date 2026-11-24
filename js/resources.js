@@ -923,11 +923,47 @@
     }
   }
 
+  // tier 3 fallback for horizontal table scroll shadows (when scroll-state & scroll-driven animations are unsupported)
+  function initTableScrollHintsFallback() {
+    if (
+      typeof CSS !== 'undefined' &&
+      (CSS.supports('container-type', 'scroll-state') || CSS.supports('animation-timeline', 'scroll()'))
+    ) {
+      return;
+    }
+    if (!('IntersectionObserver' in window)) return;
+
+    const scroller = document.querySelector('.table-wrapper');
+    if (!scroller) return;
+
+    const start = document.createElement('div');
+    const end = document.createElement('div');
+    [start, end].forEach(sentinel => {
+      sentinel.setAttribute('aria-hidden', 'true');
+      sentinel.style.cssText = 'flex: 0 0 1px; min-inline-size: 1px; min-block-size: 1px; pointer-events: none;';
+    });
+    start.style.marginInlineEnd = '-1px';
+    end.style.marginInlineStart = '-1px';
+
+    scroller.prepend(start);
+    scroller.append(end);
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(({ target, isIntersecting }) => {
+        scroller.classList.toggle(target === start ? 'more-start' : 'more-end', !isIntersecting);
+      });
+    }, { root: scroller, rootMargin: '1px' });
+
+    observer.observe(start);
+    observer.observe(end);
+  }
+
   // boot routine
   function init() {
     initMetrics();
     initCharts();
     setupEvents();
+    initTableScrollHintsFallback();
     setViewMode(state.viewMode);
   }
 

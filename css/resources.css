@@ -678,13 +678,98 @@ body.resources-page {
 }
 
 .table-wrapper {
+  display: flex;
+  align-items: stretch;
   overflow-x: auto;
   max-width: 100%;
-  /* accessible scrollable container */
+  /* accessible scrollable container with scroll-state affordance hints */
   position: relative;
+  container-type: scroll-state;
+  scroll-padding-inline: 2rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* horizontal scroll shadows via pseudo-elements (no extra markup) */
+.table-wrapper::before,
+.table-wrapper::after {
+  content: "";
+  display: block;
+  position: sticky;
+  flex: 0 0 2rem;
+  inline-size: 2rem;
+  z-index: 20;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 200ms ease;
+}
+
+.table-wrapper::before {
+  inset-inline-start: 0;
+  margin-inline-end: -2rem;
+  background: linear-gradient(
+    to right,
+    rgba(15, 23, 42, 0.14) 0%,
+    rgba(15, 23, 42, 0.05) 45%,
+    transparent 100%
+  );
+}
+
+.table-wrapper::after {
+  inset-inline-end: 0;
+  margin-inline-start: -2rem;
+  background: linear-gradient(
+    to left,
+    rgba(15, 23, 42, 0.14) 0%,
+    rgba(15, 23, 42, 0.05) 45%,
+    transparent 100%
+  );
+}
+
+@container scroll-state(scrollable: inline-start) {
+  .table-wrapper::before {
+    opacity: 1;
+  }
+}
+
+@container scroll-state(scrollable: inline-end) {
+  .table-wrapper::after {
+    opacity: 1;
+  }
+}
+
+/* tier 2 fallback: scroll-driven animations when scroll-state queries are unsupported */
+@supports not (container-type: scroll-state) {
+  .table-wrapper::before,
+  .table-wrapper::after {
+    animation: show-table-scroll-shadow linear both;
+    animation-timeline: scroll(nearest inline);
+  }
+
+  .table-wrapper::before {
+    animation-range: 0 2rem;
+  }
+
+  .table-wrapper::after {
+    animation-direction: reverse;
+    animation-range: calc(100% - 2rem) 100%;
+  }
+}
+
+@keyframes show-table-scroll-shadow {
+  to {
+    opacity: 1;
+  }
+}
+
+/* tier 3 fallback: IntersectionObserver sentinel classes for older browsers */
+.table-wrapper.more-start::before,
+.table-wrapper.more-end::after {
+  opacity: 1;
 }
 
 .shadcn-table {
+  flex: 0 0 100%;
+  min-width: 100%;
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
