@@ -572,18 +572,12 @@ svg.icon,
   color: var(--color-text);
   border: 1px solid var(--slate-300);
   border-radius: var(--radius-md);
-  padding: 0.75rem 1.25rem;
+  padding: 0.85rem 1.25rem;
   width: 100%;
-  max-width: 680px;
+  max-width: 720px;
   text-align: center;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
-  cursor: pointer;
-}
-
-.hero-alert:hover {
-  text-decoration: none;
-  color: var(--color-text);
-  border-color: var(--slate-400);
+  cursor: default;
 }
 
 /* corner pulse on alert */
@@ -650,9 +644,30 @@ svg.icon,
   gap: 0.5rem;
 }
 
+.hero-alert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-top: 0.35rem;
+}
+
 .hero-alert-desc {
   font-size: 0.88rem;
   color: var(--color-text-body);
+  line-height: 1.45;
+}
+
+.hero-alert-item-link {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.hero-alert-item-link:hover {
+  color: var(--slate-950);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .hero-alert-link {
@@ -661,9 +676,8 @@ svg.icon,
   text-decoration: none;
 }
 
-.hero-alert-link:hover {
-  color: var(--slate-700);
-  text-decoration: none;
+.hero-alert-item-link:hover .hero-alert-link {
+  color: var(--slate-950);
 }
 
 .hero-title {
@@ -847,6 +861,7 @@ svg.icon,
   font-size: 0.92rem;
   color: var(--color-text-body);
   line-height: 1.7;
+  text-align: justify;
 }
 
 /* mission items */
