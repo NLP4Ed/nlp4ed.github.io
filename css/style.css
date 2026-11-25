@@ -1281,6 +1281,18 @@ svg.icon,
   height: 20px;
 }
 
+.team-card .btn-solid-neutral {
+  background-color: var(--slate-600);
+  border-color: var(--slate-600);
+  color: var(--color-white);
+}
+
+.team-card .btn-solid-neutral:hover {
+  background-color: #000000;
+  border-color: #000000;
+  color: var(--color-white) !important;
+}
+
 /* footer */
 .site-footer {
   background-color: var(--slate-950);
