@@ -1,6 +1,6 @@
 /**
  * nlp4ed resource repository data
- * total items: 96
+ * total items: 99
  */
 window.NLP4ED_RESOURCES = [
   {
@@ -1000,6 +1000,40 @@ window.NLP4ED_RESOURCES = [
     ],
     "url": "https://nlp4ed.com/Leximetrica/",
     "beginnerFriendly": true
+  },
+  {
+    "id": 97,
+    "title": "r/Morocco Reddit Corpus",
+    "description": "A corpus of 15 posts and 3,564 comments collected from r/Morocco (2022-2026).",
+    "tags": [
+      "by NLP4Ed",
+      "Datasets"
+    ],
+    "url": "https://huggingface.co/datasets/NLP4Ed/reddit-morocco",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 98,
+    "title": "SwitchMeter-MA",
+    "description": "Quantifying code-switching",
+    "tags": [
+      "by NLP4Ed",
+      "Work in Progress"
+    ],
+    "url": "https://github.com/yassinelchgary/SwitchMeter-MA",
+    "beginnerFriendly": false
+  },
+  {
+    "id": 99,
+    "title": "RepreCorpus",
+    "description": "Evaluate whether a text corpus represents its target discourse domain",
+    "tags": [
+      "by NLP4Ed",
+      "Text",
+      "Work in Progress"
+    ],
+    "url": "https://github.com/NLP4Ed/RepreCorpus",
+    "beginnerFriendly": false
   }
 ];
 
